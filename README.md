@@ -1,7 +1,13 @@
 # keras-iaf-mnist
-Implementation of Inverse Autoregressive Flows with Keras
+## 1) Implementation of a VAE with Keras (diagonal Gaussian posterior)
+```MNIST - Diagonal Gaussian posterior.ipynb``` is a version of https://github.com/fchollet/keras/blob/master/examples/variational_autoencoder.py
 
-This code is a modified version of https://github.com/fchollet/keras/blob/master/examples/variational_autoencoder.py, trying to include IAF in the model.
+## 2) Implementation of a VAE with Keras (full Gaussian posterior)
+```MNIST - Full Gaussian posterior.ipynb``` is a modified version of https://github.com/fchollet/keras/blob/master/examples/variational_autoencoder.py, trying to replacing the diagonal Gaussian posterior with a full Gaussian one
+
+## 3) Implementation of Inverse Autoregressive Flows with Keras
+
+```MNIST - IAF MADE.ipynb``` is a modified version of https://github.com/fchollet/keras/blob/master/examples/variational_autoencoder.py, trying to include IAF in the model.
 IAF is a technique introduced by DP Kingma et al. (see https://arxiv.org/pdf/1606.04934.pdf). It is supposed to give the latent variables a more flexible posterior, improving the modeling power of the model.
 I used 2-layered MADE models (see https://arxiv.org/pdf/1502.03509.pdf) as auto-regressive networks.
 
